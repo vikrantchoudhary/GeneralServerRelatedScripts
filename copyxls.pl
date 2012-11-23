@@ -4,7 +4,7 @@ use POSIX qw(strftime);
 $now_string = strftime "%a_%b%e%Y_%H%M", localtime;
 
 my $SCPCOMMAND="\/usr\/bin\/scp \-i \/home\/vikrant\/test2\.pem ";
-my $remote_servers = "54.251.41.113,54.251.41.252,ec2-46-137-193-41.ap-southeast-1.compute.amazonaws.com";
+my $remote_servers = "server name";
 my @remotes = split (',',$remote_servers);
 my $i=0;
 foreach  (@remotes) {
